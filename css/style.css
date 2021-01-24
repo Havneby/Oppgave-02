@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
 body {
   display: grid;
   grid-template-areas: "header header header" ". main .";
-  grid-template-columns: 0.25fr 1fr 0.25;
+  grid-template-columns: 0.16fr 1fr 0.16fr;
   grid-template-rows: auto;
   color: #333333;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
 }
 
 header {
@@ -11,7 +15,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   box-shadow: #00000019 0px 6px 10px;
+  padding: 0 30px;
+  height: 63px;
+  margin-bottom: 67px;
 }
 
 main {
@@ -21,20 +29,110 @@ main {
   align-items: center;
   justify-content: center;
 }
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 926px;
+}
+main section section {
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+#addButton {
+  width: 141px;
+  height: 42px;
+  font-size: 20px;
+}
 
 #addButton, button {
   color: white;
   background: #56D4C2;
   border: none;
   border-radius: 5px;
+  text-align: center;
+  align-self: flex-end;
 }
 
 #addButton:hover, button:hover {
-  background: #5DD3D829;
+  background: #71ecda;
+}
+
+.textInSet {
+  width: 463px;
+  height: 49px;
+  font-size: 30px;
+  margin-bottom: 17px;
+}
+
+textarea {
+  width: 926px;
+  height: 135px;
+  resize: none;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 20px;
 }
 
 input, textarea {
   border-radius: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+label {
+  color: black;
+}
+
+label, h2 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+article {
+  margin-bottom: 49px;
+  box-shadow: #5DD3D829 0px 8px 16px;
+  padding: 27px 22px 28px 30px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightMargin {
+  margin-right: 40px;
+}
+
+button {
+  width: 77px;
+  height: 23px;
+  font-weight: 700;
+}
+
+.fontMedium {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
