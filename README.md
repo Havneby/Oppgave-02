@@ -4,3 +4,4 @@ First obligatory task.
 Space-between was used as it most closely resembled the design when the windows was scaled appropriately.
 
 Manadspaniel is my personal account, and for some reason whenever I push from the terminal it uses that account despite me typing my school account's credentials 3 times.
+Edit: Figured out what was causing the issue. All pushes should be coming from this (Havneby) account from now on.
